@@ -13,10 +13,10 @@
 * `docker images`: This command is used to display all the images available on the local machine.
 * `docker image ls`: This command is also used to display all the images available on the local machine.
 * `docker history react-app`: This command displays all the instructions are executed seperatly with thier size and gets stored as a seperate layer.
-* `docker image prune`: This command is used remove all the dangaling images
-* `docker container prune`: This command is used remove all the stopped containers
+* `docker image prune`: This command is used remove all the dangaling images.
+* `docker container prune`: This command is used remove all the stopped containers.
 * `docker image rm react-app`: This command is used remove one or multiple images
-* `docker build -t reactapp:1 .`: This command is used to build the docker image with a tag name
-* `docker image remove react-app:1`: This command is used untag an image
-* `docker image tag react-app:latest react-app:1`: This command is used to set a tag for already existing image
-* `docker image tag react-app:2 react-app:latest`: This command is also used to update the lastest tag name to the newly built docker image
+* `docker build -t reactapp:1 .`: This command is used to build the docker image with a tag name.
+* `docker image remove react-app:1`: This command is used untag an image.
+* `docker image tag react-app:latest react-app:1`: This command is used to set a tag for already existing image.
+* `docker image tag react-app:2 react-app:latest`: This command is also used to update the lastest tag to the newly built docker image.
