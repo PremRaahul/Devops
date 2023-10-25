@@ -2,6 +2,7 @@ FROM node:18-alpine
 RUN addgroup app && adduser -S -G app app
 USER app
 WORKDIR /app
+RUN mkdir data
 COPY --chown=app:app package*.json .
 RUN npm install
 COPY --chown=app:app . .

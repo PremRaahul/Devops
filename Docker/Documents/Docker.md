@@ -20,3 +20,18 @@
 * `docker image remove react-app:1`: This command is used untag an image.
 * `docker image tag react-app:latest react-app:1`: This command is used to set a tag for already existing image.
 * `docker image tag react-app:2 react-app:latest`: This command is also used to update the lastest tag to the newly built docker image.
+* `docker login`: This command is used for signing into docker hub account using command prompt
+* `docker push iampremraahul/react-app:3`: This command is used to push the image into the docker hub 
+* `docker image save -o react-app.zip iampremraahul/react-app:3`: This command is convert the docker image into a zip file (if you have any doughts regarding this command then you can use `docker image save --help`)
+* `docker image load -i react-app.zip`: This command is used to load the image which is saved locally
+* `docker run -d react-app`: This command is used to run the docker command in ditached mode so that we access the terminal without terminating or stoping the image
+* `docker run -d --name blue-sky react-app`: This command used to give the container name manully and run it in a ditached mode 
+* `docker logs 3356`: This command is used to see the logs of the container that is running and we can explore about this with the help of `docker logs --help`
+* `docker run -d -p 3000:3000 --name c1 react-app`: This command is used for port publishing from host to the container
+* `docker exec -it c1 sh` - `docker exec c1 sh`: The execute command is used execute the commands in a running container
+* `docker stop c1`: This command is used to stop a running container
+* `docker start c1`: This command is used to start a stopped container
+* `docker rm c1` - `docker container rm c1`: This command is used to remove a container
+* `docker container rm -f c1`: If the container is runnig and you try to remove that container then remove the container force fully or we need to stop the container and remove it
+* `docker volume create app-data`: This command is used create a volume in docker and this volume can act as centralised file system among the multiple containers
+* `docker run -d -p 5000:3000 -v app-data:/app/data/ react-app`: This command is used for volume mapping with the container that is running
