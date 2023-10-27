@@ -2,6 +2,7 @@
 
 ## Docker Commands
 
+* `docker version`: This command is used to check the current version of the docker that is installed
 * `docker build -t react-app .`: This command is used to build a Docker image. `-t` indicates the tag name, and `.` at the end indicates that the Dockerfile is in the current directory.
 * `docker run ubuntu`: This command is used to run the Ubuntu image.
 * `docker pull ubuntu`: This command is used to pull images from Docker Hub.
@@ -35,3 +36,6 @@
 * `docker container rm -f c1`: If the container is runnig and you try to remove that container then remove the container force fully or we need to stop the container and remove it
 * `docker volume create app-data`: This command is used create a volume in docker and this volume can act as centralised file system among the multiple containers
 * `docker run -d -p 5000:3000 -v app-data:/app/data/ react-app`: This command is used for volume mapping with the container that is running
+* `docker cp 8400fa6dba6d:/app/log.txt .`: This command is used to copy a file from the container to the current directory of the host
+* `docker cp secret.txt 8400fa6dba6d:/app/`: This command is used to copy the file from the host to the container
+* `docker run -d -p 3000:3000 -v $(pwd):/app/ react-app`: This command is used to map the project directory in the host with project directory of the container, any changes that are made in the host project can also be seen in the container that is currently running
